@@ -1,0 +1,7 @@
+export const hero = "https://avatars.githubusercontent.com/u/67946056?v=4"
+export const instagram = "https://www.instagram.com/devpenzil/"
+export const linkedin = "https://www.linkedin.com/in/ajoalex/"
+export const dev = "https://dev.to/devpenzil"
+export const reactjs = "https://reactjs.org/"
+export const netlify = "https://www.netlify.com/"
+export const github = "https://github.com/devpenzil"
