@@ -3,7 +3,7 @@ import React from 'react'
 import {useHistory} from 'react-router-dom'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import {devapi, hero, githubapi} from '../../components/Assets'
+import {hero, githubapi} from '../../components/Assets'
 function RepoPage() {
     const [blogs, setBlogs] = useState([])
     const fetchingblgs = () => {
