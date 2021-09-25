@@ -19,7 +19,7 @@ function Homepage() {
                     </div>
                     <div className="flex space-x-4 mt-4">
                         <div className="cursor-pointer underline hover:no-underline hover:text-gray-400" onClick={()=>jumbtopage("blogs")}> My Blogs</div>
-                        <div className="cursor-pointer" onClick={()=>jumbtopage("blogs")}> My Repos</div>
+                        <div className="cursor-pointer underline hover:no-underline hover:text-gray-400" onClick={()=>jumbtopage("repos")}> My Repos</div>
                     </div>
                     <div className="mt-4 font-medium text-lg text-justify  md:leading-loose">
                         I am a front end developer based in kerala with an aim of make something bigger. so i wright blogs for others. I have build some small projects for my timepass and some projects for others. and i love open source contribution and my repos are always public.
