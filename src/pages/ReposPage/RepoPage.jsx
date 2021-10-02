@@ -1,11 +1,10 @@
 import axios from 'axios'
-import React from 'react'
-import {useHistory} from 'react-router-dom'
-import { useEffect } from 'react'
-import { useState } from 'react'
+import React ,{ useEffect, useState } from 'react'
 import {hero, githubapi} from '../../components/Assets'
+import Navbar from '../../components/Navbar'
+import Loader from '../../components/Loader'
 function RepoPage() {
-    const [blogs, setBlogs] = useState([])
+    const [blogs, setBlogs] = useState()
     const fetchingblgs = () => {
         axios.get(githubapi).then((Response)=>{
             setBlogs(Response.data)
@@ -16,14 +15,11 @@ function RepoPage() {
     useEffect(() => {
         fetchingblgs()
     }, [])
-    const history = useHistory()
-    const jumbtopage = (path) => {
-        history.push(`/${path}`)
-    } 
     return (
         <div className="w-full min-h-screen bg-white">
-            <div className="container md:w-2/3 mx-auto py-10 px-4">
-                <img onClick={()=>jumbtopage("")} src={hero} className="w-14 rounded-full mb-4 cursor-pointer" alt="" />
+            <Navbar />
+            <div className="container md:w-2/3 mx-auto py-4 px-4">
+                <img src={hero} className="w-14 rounded-full mb-4 cursor-pointer" alt="" />
 
                 <div>
                     <div className="text-2xl font-semibold">Repos</div>
@@ -39,7 +35,7 @@ function RepoPage() {
                         )
                     })
                     
-                    : "Loading.."}
+                    : <Loader />}
                 </div>
             </div>
         </div>

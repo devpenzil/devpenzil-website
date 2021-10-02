@@ -1,29 +1,27 @@
 import axios from 'axios'
 import React from 'react'
-import {useHistory} from 'react-router-dom'
+import Loader from '../../components/Loader'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import {devapi, hero} from '../../components/Assets'
+import Navbar from '../../components/Navbar'
 function BlogPage() {
-    const [blogs, setBlogs] = useState([])
+    const [blogs, setBlogs] = useState()
     const fetchingblgs = () => {
         axios.get(devapi).then((Response)=>{
             setBlogs(Response.data)
         }).catch((Error)=>{
             console.log(Error)
-        })
+        })  
     }
     useEffect(() => {
         fetchingblgs()
     }, [])
-    const history = useHistory()
-    const jumbtopage = (path) => {
-        history.push(`/${path}`)
-    } 
     return (
         <div className="w-full min-h-screen bg-white">
-            <div className="container md:w-2/3 mx-auto py-10 px-4">
-                <img onClick={()=>jumbtopage("")} src={hero} className="w-14 rounded-full mb-4 cursor-pointer" alt="" />
+            <Navbar />
+            <div className="container md:w-2/3 mx-auto py-4 px-4">
+                <img src={hero} className="w-14 rounded-full mb-4 cursor-pointer" alt="" />
 
                 <div>
                     <div className="text-2xl font-semibold">Blogs</div>
@@ -41,7 +39,9 @@ function BlogPage() {
                         )
                     })
                     
-                    : "Loading.."}
+                    : <Loader />}
+                   
+                    
                 </div>
             </div>
         </div>
