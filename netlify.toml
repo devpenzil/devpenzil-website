@@ -1,0 +1,48 @@
+[build]
+  command = "npm run build"
+  environment = { NODE_VERSION = "16.5.0" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  force = true
+
+[[redirects]]
+  from = "/blogs"
+  to = "/blogs"
+  force = true
+
+[[redirects]]
+  from = "/repos"
+  to = "/repos"
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact"
+  force = true
+
+[[redirects]]
+  from = "/linkedin"
+  to = "https://www.linkedin.com/in/ajoalex/"
+  force = true
+
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/devpenzil"
+  force = true
+
+[[redirects]]
+  from = "/instagram"
+  to = "https://www.instagram.com/devpenzil/"
+  force = true
+
+[[redirects]]
+  from = "/dev"
+  to = "https://dev.to/devpenzil"
+  force = true
