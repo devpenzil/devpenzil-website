@@ -10,7 +10,7 @@ function Form() {
                     <textarea className="p-2 bg-purple-200 border-0 outline-none my-2 rounded-lg" name="message" id="message" cols="30" rows="10" placeholder="Your Message" required>
 
                     </textarea>
-                    <button className="p-2 my-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-400">send</button>
+                    <button type="submit" className="p-2 my-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-400">send</button>
                 </form>
             </div>
         </div>
