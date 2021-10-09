@@ -1,6 +1,7 @@
 import React from "react";
 import { hero } from "../../components/Assets";
 import Navbar from "../../components/Navbar";
+import Social from "../../components/Social";
 import Form from "./components/Form";
 function Contactpage() {
   return (
@@ -14,9 +15,12 @@ function Contactpage() {
             alt=""
           />
           <div className="text-2xl font-semibold dark:text-white">Contact Me</div>
+          <Social />
           <Form />
         </div>
+        
       </div>
+      
     </div>
   );
 }
