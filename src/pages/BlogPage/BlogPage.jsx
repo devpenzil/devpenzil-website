@@ -18,23 +18,23 @@ function BlogPage() {
         fetchingblgs()
     }, [])
     return (
-        <div className="w-full min-h-screen bg-white">
+        <div className="w-full min-h-screen dark:bg-gray-800 bg-white">
             <Navbar />
             <div className="container md:w-2/3 mx-auto py-4 px-4">
                 <img src={hero} className="w-14 rounded-full mb-4 cursor-pointer" alt="" />
 
                 <div>
-                    <div className="text-2xl font-semibold">Blogs</div>
+                    <div className="text-2xl font-semibold dark:text-white">Blogs</div>
                     {blogs ?
                     blogs.map((obj,id)=>{
                         return(
                             <div key={id} className="mt-8">
-                                <div className="text-lg text-purple-600 hover:text-purple-400 font-medium">
+                                <div className="text-lg dark:text-green-400 text-purple-600 hover:text-purple-400 font-medium ">
                                     <a href={obj.url}>
                                     {obj.readable_publish_date} - {obj.title}
                                     </a>
                                 </div>
-                                <div className="mt-2 text-gray-500 text-base">{obj.description}</div>
+                                <div className="mt-2 text-gray-500 dark:text-gray-200 text-base">{obj.description}</div>
                             </div>
                         )
                     })

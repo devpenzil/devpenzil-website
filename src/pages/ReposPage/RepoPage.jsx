@@ -16,21 +16,21 @@ function RepoPage() {
         fetchingblgs()
     }, [])
     return (
-        <div className="w-full min-h-screen bg-white">
+        <div className="w-full min-h-screen dark:bg-gray-800 bg-white">
             <Navbar />
             <div className="container md:w-2/3 mx-auto py-4 px-4">
                 <img src={hero} className="w-14 rounded-full mb-4 cursor-pointer" alt="" />
 
                 <div>
-                    <div className="text-2xl font-semibold">Repos</div>
+                    <div className="text-2xl dark:text-gray-100 font-semibold">Repos</div>
                     {blogs ?
                     blogs.map((obj,id)=>{
                         return(
                             <div key={id} className="mt-8">
-                                <div className="text-lg text-indigo-600 hover:text-indigo-400 font-medium">
+                                <div className="text-lg text-indigo-600 dark:text-yellow-400 hover:text-indigo-400 font-medium">
                                  {id+1}  . <a href={obj.html_url}>{obj.full_name} - <span className="text-sm"> {obj.language}</span> </a>
                                 </div>
-                                <div className=" text-gray-500 text-base">{obj.description}</div>
+                                <div className="dark:text-green-100 text-gray-500 text-base">{obj.description}</div>
                             </div>
                         )
                     })
