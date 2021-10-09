@@ -8,7 +8,7 @@ function Navbar() {
     }
     return (
         <>
-            <div className="container md:w-2/3 mx-auto py-8 px-4  flex space-x-6 overflow-x-auto ">
+            <div className="container md:w-2/3 mx-auto py-8 px-4  flex space-x-2 overflow-x-auto ">
             <NavButtons label={"Home"} triggerclick={()=> goto("/")}/>
             <NavButtons label={"Blogs"} triggerclick={()=> goto("/blogs")}/>
             <NavButtons label={"Repos"} triggerclick={()=> goto("/repos")}/>
