@@ -28,6 +28,11 @@
   force = true
 
 [[redirects]]
+  from = "/timeline"
+  to = "/timeline"
+  force = true
+
+[[redirects]]
   from = "/linkedin"
   to = "https://www.linkedin.com/in/ajoalex/"
   force = true

@@ -1,0 +1,44 @@
+{
+    "timeline":[
+        {
+            "date": "May 19, 2001",
+            "head": "Born",
+            "desc": "@ Wc hospital, TVM"
+        },
+        {
+            "date": "March , 2016",
+            "head": "Finished School",
+            "desc": "@ St. Thomas HS Kadampanad"
+        },
+        {
+            "date": "March , 2018",
+            "head": "Finished Plus Two",
+            "desc": "@ St. Thomas HSS Kadampanad (Commerce Stream)"
+        },
+        {
+            "date": "July , 2019",
+            "head": "Finished ITI",
+            "desc": "@ Gateway Computer Education Private ITI (Computer Operator & Programming Assistant)"
+        },
+        {
+            "date": "July , 2019",
+            "head": "Joined as Lab Instructor (My first Job)",
+            "desc": "@ Gateway Computer Education Private ITI "
+        },
+        {
+            "date": "January 27 , 200",
+            "head": "Attended India skills Kerala - State Level",
+            "desc": "@ SUIIT Kazhakoottam "
+        },
+        {
+            "date": "June 22 , 2020",
+            "head": "Joined as Data Entry Operator Trainee",
+            "desc": "@ College of Applied science Adoor "
+        },
+        {
+            "date": "July 26 , 2021",
+            "head": "Joined as Software Development Intern",
+            "desc": "@ Neoito Technologies Private Ltd, Pattam "
+        }
+    ]
+}
